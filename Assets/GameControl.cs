@@ -37,6 +37,7 @@ public class GameControl : MonoBehaviour {
         if (player1.GetComponent<FollowThePath>().waypointIndex > 
             player1StartWaypoint + diceSideThrown)
         {
+            Debug.Log("Player to disable: 1");
             player1.GetComponent<FollowThePath>().moveAllowed = false;
             player1MoveText.gameObject.SetActive(false);
             player2MoveText.gameObject.SetActive(true);
@@ -46,6 +47,7 @@ public class GameControl : MonoBehaviour {
         if (player2.GetComponent<FollowThePath>().waypointIndex >
             player2StartWaypoint + diceSideThrown)
         {
+            Debug.Log("Player to disable: 2");
             player2.GetComponent<FollowThePath>().moveAllowed = false;
             player2MoveText.gameObject.SetActive(false);
             player1MoveText.gameObject.SetActive(true);
@@ -80,6 +82,22 @@ public class GameControl : MonoBehaviour {
 
             case 2:
                 player2.GetComponent<FollowThePath>().moveAllowed = true;
+                break;
+        }
+    }
+
+    public static void DisablePlayer(int playerToDisable)
+    {
+        Debug.Log("Player to disable: " + playerToDisable);
+        switch (playerToDisable) { 
+            case 1:
+                player2MoveText.gameObject.SetActive(false);
+                player1MoveText.gameObject.SetActive(true);
+                break;
+
+            case 2:
+                player1MoveText.gameObject.SetActive(false);
+                player2MoveText.gameObject.SetActive(true);
                 break;
         }
     }

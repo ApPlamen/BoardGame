@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Иван Вазов - любопитни факти",
+    "description": "Как се казва кучето на Иван Вазов и каква порода е?",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Хектор / мопс",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Бари / бийгъл",
+        "isRight": false
+      },
+      {
+        "id": 3,
+        "description": "Рико / бернска овчарка",
+        "isRight": false
+      }
+    ]
+  }, 
+  {
+    "id": 2,
+    "title": "USA",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ]
+  }, 
+  {
+    "id": 3,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ]
+  }
+]
