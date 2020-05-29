@@ -1,5 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
+using UnityEditor;
+using Random = UnityEngine.Random;
 
 public class Dice : MonoBehaviour {
 
@@ -7,6 +10,8 @@ public class Dice : MonoBehaviour {
     private SpriteRenderer rend;
     private int whosTurn = 1;
     private bool coroutineAllowed = true;
+    private FileUtils _utils = new FileUtils();
+    private Question _question = new Question();
 
 	// Use this for initialization
 	private void Start () {
@@ -14,12 +19,9 @@ public class Dice : MonoBehaviour {
         diceSides = Resources.LoadAll<Sprite>("DiceSides/");
         rend.sprite = diceSides[5];
 	}
-
-    private void OnMouseDown()
+    void OnMouseDown()
     {
-        if (!GameControl.gameOver && coroutineAllowed)
-            // pop up questions 
-            StartCoroutine("RollTheDice");
+        DialogWindow();
     }
 
     private IEnumerator RollTheDice()
@@ -44,4 +46,67 @@ public class Dice : MonoBehaviour {
         whosTurn *= -1;
         coroutineAllowed = true;
     }
+
+    private void DialogWindow()
+    {
+        _question = _utils.GetRandomQuestion();
+        string[] answers = new[] {"", "", "", "", "", "", "", "", ""};
+        int i = 0;
+        foreach (var answer in _question.Answers)
+        {
+            answers[i] = answer.Description;
+            i++;
+        }
+
+        Popup.Create(_question.Title, _question.Description, 
+            AnswerCallback, "Dialogue", answers[0], answers[1], answers[2], 
+            answers[3], answers[4], answers[5], answers[6], answers[7], answers[8]);
+    }
+    
+    void AnswerCallback(int answerIndex)
+    {
+        if (answerIndex == -1)
+        {
+            Popup.Create("Exited answer", "You have exited the question. Your turn is now automatically skipped!",
+                OKButtonCallback, "PopUp", "Okay");
+            whosTurn *= -1;
+        }
+
+        if (answerIndex != -1)
+        {
+            Answer answer = getAnswer(answerIndex);
+        
+            if (answer != null && answer.IsRight)
+            {
+                if (!GameControl.gameOver && coroutineAllowed)
+                    // pop up questions 
+                    StartCoroutine("RollTheDice");
+            }
+            else
+            {
+                Popup.Create("Wrong answer", "You have answered the question wrong. Your turn is now skipped!",
+                    OKButtonCallback, "PopUp", "Okay");
+                int playerNumber = whosTurn == 1 ? 1 : 2;
+                GameControl.DisablePlayer(playerNumber);
+                whosTurn *= -1;
+            }
+        }
+    }
+
+    private Answer getAnswer(int id)
+    {
+        Answer result = null;
+        foreach (var answer in _question.Answers)
+        {
+            if (answer.Id == id)
+            {
+                result = answer;
+                break;
+            }
+        }
+
+        return result;
+    }
+
+    private void OKButtonCallback(int result) { }
 }
