@@ -67,8 +67,8 @@ public class Dice : MonoBehaviour {
     {
         if (answerIndex == -1)
         {
-            Popup.Create("Exited answer", "You have exited the question. Your turn is now automatically skipped!",
-                OKButtonCallback, "PopUp", "Okay");
+            Popup.Create("Пропусна въпрос!", "Ти пропусна върпос! Съжалявам, но не можеш да хвърлиш зарчето.",
+                OKButtonCallback, "PopUp", "Разбрах");
             whosTurn *= -1;
         }
 
@@ -78,14 +78,15 @@ public class Dice : MonoBehaviour {
         
             if (answer != null && answer.IsRight)
             {
+                Popup.Create("Браво!", "Браво! Ти даде верен отговор. Да видим какво ще покаже зарчето!",
+                    OKButtonCallback, "PopUp", "Ура");
                 if (!GameControl.gameOver && coroutineAllowed)
-                    // pop up questions 
                     StartCoroutine("RollTheDice");
             }
             else
             {
-                Popup.Create("Wrong answer", "You have answered the question wrong. Your turn is now skipped!",
-                    OKButtonCallback, "PopUp", "Okay");
+                Popup.Create("Съжалявам!", "Съжалявам, но ти даде грешен отговор. Пропускаш ход.",
+                    OKButtonCallback, "PopUp", "Добре");
                 int playerNumber = whosTurn == 1 ? 1 : 2;
                 GameControl.DisablePlayer(playerNumber);
                 whosTurn *= -1;
