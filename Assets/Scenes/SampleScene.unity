@@ -436,7 +436,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your Move
+  m_Text: "\u0422\u0438 \u0441\u0438 \u043D\u0430 \u0445\u043E\u0434"
 --- !u!222 &182598795
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2389,7 +2389,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your Move
+  m_Text: "\u0422\u0438 \u0441\u0438 \u043D\u0430 \u0445\u043E\u0434"
 --- !u!222 &1402944666
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3049,7 +3049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.029929161, g: 0, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.53735733, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
