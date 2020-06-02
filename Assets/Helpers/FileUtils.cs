@@ -14,11 +14,8 @@ namespace UnityEngine
         
         private void LoadAllQuestions()
         {
-            using (StreamReader r = new StreamReader("Assets/Helpers/questions.json"))
-            {
-                string json = r.ReadToEnd();
-                questions = JsonConvert.DeserializeObject<List<Question>>(json);
-            }
+            TextAsset json = (TextAsset)Resources.Load("questions", typeof(TextAsset)); 
+            questions = JsonConvert.DeserializeObject<List<Question>>(json.text);
         }
 
         public Question GetRandomQuestion()

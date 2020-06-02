@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEditor;
 using Random = UnityEngine.Random;
 
@@ -10,17 +11,21 @@ public class Dice : MonoBehaviour {
     private SpriteRenderer rend;
     private int whosTurn = 1;
     private bool coroutineAllowed = true;
-    private FileUtils _utils = new FileUtils();
+    private FileUtils _utils;
     private Question _question = new Question();
 
 	// Use this for initialization
-	private void Start () {
+	void Start () {
         rend = GetComponent<SpriteRenderer>();
         diceSides = Resources.LoadAll<Sprite>("DiceSides/");
         rend.sprite = diceSides[5];
+		_utils = new FileUtils();;
 	}
-    void OnMouseDown()
+
+    //Detect if a click occurs
+    public void OnMouseDown()
     {
+        //Output to console the clicked GameObject's name and the following message. You can replace this with your own actions for when clicking the GameObject.
         DialogWindow();
     }
 
@@ -50,64 +55,18 @@ public class Dice : MonoBehaviour {
     private void DialogWindow()
     {
         _question = _utils.GetRandomQuestion();
-        string[] answers = new[] {"", "", "", "", "", "", "", "", ""};
-        int i = 0;
-        foreach (var answer in _question.Answers)
-        {
-            answers[i] = answer.Description;
-            i++;
-        }
-
-        Popup.Create(_question.Title, _question.Description, 
-            AnswerCallback, "Dialogue", answers[0], answers[1], answers[2], 
-            answers[3], answers[4], answers[5], answers[6], answers[7], answers[8]);
+		PopupHelper.CreatePopup(_question, this);
     }
-    
-    void AnswerCallback(int answerIndex)
-    {
-        if (answerIndex == -1)
+
+    public void AnswerCallBack(bool result) { 
+		if (result)
         {
-            Popup.Create("Пропусна въпрос!", "Ти пропусна върпос! Съжалявам, но не можеш да хвърлиш зарчето.",
-                OKButtonCallback, "PopUp", "Разбрах");
+            if (!GameControl.gameOver && coroutineAllowed)
+                StartCoroutine("RollTheDice");
+        }
+        else
+        {
             whosTurn *= -1;
         }
-
-        if (answerIndex != -1)
-        {
-            Answer answer = getAnswer(answerIndex);
-        
-            if (answer != null && answer.IsRight)
-            {
-                Popup.Create("Браво!", "Браво! Ти даде верен отговор. Да видим какво ще покаже зарчето!",
-                    OKButtonCallback, "PopUp", "Ура");
-                if (!GameControl.gameOver && coroutineAllowed)
-                    StartCoroutine("RollTheDice");
-            }
-            else
-            {
-                Popup.Create("Съжалявам!", "Съжалявам, но ти даде грешен отговор. Пропускаш ход.",
-                    OKButtonCallback, "PopUp", "Добре");
-                int playerNumber = whosTurn == 1 ? 1 : 2;
-                GameControl.DisablePlayer(playerNumber);
-                whosTurn *= -1;
-            }
-        }
-    }
-
-    private Answer getAnswer(int id)
-    {
-        Answer result = null;
-        foreach (var answer in _question.Answers)
-        {
-            if (answer.Id == id)
-            {
-                result = answer;
-                break;
-            }
-        }
-
-        return result;
-    }
-
-    private void OKButtonCallback(int result) { }
+	}
 }
