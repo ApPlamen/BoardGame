@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7985021886686599443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7985021886686599452}
+  - component: {fileID: 7985021886686599453}
+  m_Layer: 0
+  m_Name: 1920 x 1080 Marmalade Static
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7985021886686599452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7985021886686599443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 350.5, y: 342.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7985021886686599453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7985021886686599443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b531af16f8e9546b3a08cfc7ba5f316c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerPadding: 5
+  titlePadding: 10
+  messagePadding: 10
+  buttonPadding: 0
+  containerImage: {fileID: 21300000, guid: fcaa0b9ee87724ed2be005260f8644bc, type: 3}
+  containerBleed: 50
+  containerTint: {r: 0.9019608, g: 0, b: 0, a: 1}
+  buttonImage: {fileID: 21300000, guid: 2354aef2eced145bb8041637114a0b1b, type: 3}
+  buttonPressedImage: {fileID: 21300000, guid: 3802ad1d37ef94b56a7b3bdb692cf3a4, type: 3}
+  returnButtonImage: {fileID: 0}
+  returnButtonPressedImage: {fileID: 0}
+  buttonPrefixImage: 0
+  buttonBleed: 30
+  buttonSeparation: 10
+  returnButtonTint: {r: 0, g: 0, b: 0, a: 1}
+  returnButtonPressedTint: {r: 1, g: 1, b: 1, a: 1}
+  generalButtonTint: {r: 0, g: 0, b: 0, a: 1}
+  generalButtonPressedTint: {r: 0, g: 0, b: 0, a: 1}
+  backgroundImage: {fileID: 0}
+  backgroundTint: {r: 0.15686275, g: 0, b: 0, a: 0.78431374}
+  titleFont: {fileID: 12800000, guid: cfdcc7888b073447380dac6d62ec04c0, type: 3}
+  bodyFont: {fileID: 12800000, guid: 2b14431b50f294c3fb6bffb9af5032ea, type: 3}
+  buttonFont: {fileID: 12800000, guid: 56d86139cd2fe4f40ab99c0bfc99417d, type: 3}
+  textAlignment: 0
+  titleFontSize: 80
+  bodyFontSize: 30
+  buttonFontSize: 30
+  titleColor: {r: 0, g: 0, b: 0, a: 0.74509805}
+  bodyTextColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonTextColor: {r: 1, g: 1, b: 1, a: 1}
+  returnTextColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonTextColorPressed: {r: 1, g: 1, b: 1, a: 1}
+  returnTextColorPressed: {r: 0, g: 0, b: 0, a: 1}
+  makeThisParent: 0
+  container: {fileID: 0}
+  returnPosition: 0
+  buttonDirection: 0
+  fadeAnimation: 1
+  fadeProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fadeDuration: 0.2
+  referenceSize: {x: 1920, y: 1080}
+  title: Popup Title
+  message: 'Optionally multiline
+
+    popup message'
+  popupType: 0
+  popupPF: {fileID: 8701892416279498627, guid: 7d9f0f2641e194b639f9b2214409da84, type: 3}
+  placement: 2
+  flexibleWidth: 25
+  flexibleHeight: 50
+  staticWidth: 600
+  staticHeight: 600
+  staticX: 0
+  staticY: 0
+  staticAnchorX: 0.5
+  staticAnchorY: 0.5
+  staticAnchor: 4
+  worldWidth: 0
+  worldHeight: 0
+  worldPosition: {x: 0, y: 0, z: 0}
+  worldRotation: {x: 0, y: 0, z: 0}
+  worldScale: 0.01
+  worldFollowAxes: {x: 0, y: 0, z: 0}
+  fullscreenTop: 100
+  fullscreenRight: 100
+  fullscreenBottom: 100
+  fullscreenLeft: 100
+  titleSeparator: 75
+  buttonSeparator: 25
+  buttonList:
+  - text: Button 1
+    image: {fileID: 0}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    foldoutState: 0
+  returnButton:
+    text: Return
+    image: {fileID: 0}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    foldoutState: 0
+  showBehaviour: 1
+  showButtons: 0
+  showTypography: 0
+  showDesign: 0
+  showRatios: 1
+  initialize: 0

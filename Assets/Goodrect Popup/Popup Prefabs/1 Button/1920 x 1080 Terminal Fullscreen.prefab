@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3011794591539704523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3011794591539704516}
+  - component: {fileID: 3011794591539704517}
+  m_Layer: 0
+  m_Name: 1920 x 1080 Terminal Fullscreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3011794591539704516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011794591539704523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 350.5, y: 342.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3011794591539704517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011794591539704523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b531af16f8e9546b3a08cfc7ba5f316c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerPadding: 0
+  titlePadding: 10
+  messagePadding: 10
+  buttonPadding: 10
+  containerImage: {fileID: 21300000, guid: fcaa0b9ee87724ed2be005260f8644bc, type: 3}
+  containerBleed: 50
+  containerTint: {r: 0, g: 0, b: 0, a: 0.8627451}
+  buttonImage: {fileID: 21300000, guid: 536f614d1889949d09b7ef407becf032, type: 3}
+  buttonPressedImage: {fileID: 21300000, guid: a19706570f0a742c2bb6fd8cecdd0447, type: 3}
+  returnButtonImage: {fileID: 21300000, guid: abaeec740651348a5b15c18bde8aab90, type: 3}
+  returnButtonPressedImage: {fileID: 21300000, guid: 2ff78347b7f5f4be596f312c28497b11,
+    type: 3}
+  buttonPrefixImage: 1
+  buttonBleed: 30
+  buttonSeparation: 0
+  returnButtonTint: {r: 1, g: 0.7327648, b: 0, a: 1}
+  returnButtonPressedTint: {r: 1, g: 0.7327648, b: 0, a: 1}
+  backgroundImage: {fileID: 0}
+  backgroundTint: {r: 1, g: 1, b: 1, a: 0}
+  titleFont: {fileID: 12800000, guid: 6107540d0130d4ce4801b15b2ab041ac, type: 3}
+  bodyFont: {fileID: 12800000, guid: a72a01d4207c54e4fb3c05c545600485, type: 3}
+  buttonFont: {fileID: 12800000, guid: 6107540d0130d4ce4801b15b2ab041ac, type: 3}
+  textAlignment: 0
+  titleFontSize: 36
+  bodyFontSize: 36
+  buttonFontSize: 36
+  titleColor: {r: 1, g: 0, b: 0, a: 1}
+  bodyTextColor: {r: 1, g: 1, b: 1, a: 1}
+  returnTextColor: {r: 1, g: 1, b: 1, a: 1}
+  returnTextColorPressed: {r: 1, g: 0.7327648, b: 0, a: 1}
+  makeThisParent: 0
+  container: {fileID: 0}
+  fadeAnimation: 2
+  fadeProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fadeDuration: 0.25
+  referenceSize: {x: 1920, y: 1080}
+  title: Popup Title
+  message: 'Optionally multiline
+
+    popup message'
+  popupPF: {fileID: 8701892416279498627, guid: 7d9f0f2641e194b639f9b2214409da84, type: 3}
+  placement: 0
+  flexibleWidth: 25
+  flexibleHeight: 50
+  staticWidth: 400
+  staticHeight: 400
+  staticX: 0
+  staticY: 0
+  staticAnchorX: 0.5
+  staticAnchorY: 0.5
+  staticAnchor: 4
+  worldWidth: 0
+  worldHeight: 0
+  worldPosition: {x: 0, y: 0, z: 0}
+  worldRotation: {x: 0, y: 0, z: 0}
+  worldScale: 0.01
+  worldFollowAxes:
+    x: 0
+    y: 0
+    z: 0
+  fullscreenTop: 200
+  fullscreenRight: 300
+  fullscreenBottom: 200
+  fullscreenLeft: 200
+  titleSeparator: 80
+  buttonSeparator: 25
+  showBehaviour: 1
+  showButtons: 0
+  showTypography: 0
+  showDesign: 0
+  showRatios: 0
+  initialize: 0
+  generalButtonTint: {r: 0, g: 0.43380117, b: 1, a: 1}
+  generalButtonPressedTint: {r: 0, g: 0.43380117, b: 1, a: 1}
+  returnFont: {fileID: 0}
+  buttonTextColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonTextColorPressed: {r: 0, g: 0.43380117, b: 1, a: 1}
+  promptInputFieldImage: {fileID: 0}
+  promptInputFieldTint: {r: 0, g: 0, b: 0, a: 0}
+  promptInputfieldColor: {r: 0, g: 0, b: 0, a: 0}
+  promptPlaceholderColor: {r: 0, g: 0, b: 0, a: 0}
+  returnPosition: 0
+  buttonDirection: 0
+  promptType: 0
+  buttonList: []
+  showReturn: 1
+  returnButton:
+    text: Return
+    image: {fileID: 0}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: GRP_Event, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    foldoutState: 0
