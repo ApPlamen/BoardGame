@@ -19,7 +19,8 @@
         "description": "Рико / бернска овчарка",
         "isRight": false
       }
-    ]
+    ],
+    "additionalInfo": "Никола Йонков Вапцаров е роден в град Банско. Завършва прогимназия в родния си град, а гимназия в Разлог. След това учи в Морското машинно училище във Варна. След завършване на Морското училище Вапцаров постъпва като техник в книжно-мукавената фабрика.",
   }, 
   {
     "id": 2,
@@ -36,7 +37,8 @@
         "description": "Wrong Answer",
         "isRight": false
       }
-    ]
+    ],
+    "additionalInfo": "Additional Info 02",
   }, 
   {
     "id": 3,
@@ -53,6 +55,205 @@
         "description": "Wrong Answer",
         "isRight": false
       }
-    ]
-  }
+    ],
+    "additionalInfo": "Additional Info 03",
+  },
+  {
+    "id": 4,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 04",
+  },
+  {
+    "id": 5,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 05",
+  },
+  {
+    "id": 6,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 06",
+  },
+  {
+    "id": 7,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 07",
+  },
+  {
+    "id": 8,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 08",
+  },
+  {
+    "id": 9,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 09",
+  },
+  {
+    "id": 10,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 10",
+  },
+  {
+    "id": 11,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 11",
+  },
+  {
+    "id": 12,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 12",
+  },
+  {
+    "id": 13,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 13",
+  },
+  {
+    "id": 14,
+    "title": "England",
+    "description": "",
+    "answers": [
+      {
+        "id": 1,
+        "description": "Right Answer",
+        "isRight": true
+      },
+      {
+        "id": 2,
+        "description": "Wrong Answer",
+        "isRight": false
+      }
+    ],
+    "additionalInfo": "Additional Info 14",
+  },
 ]

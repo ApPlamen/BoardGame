@@ -9,5 +9,7 @@ namespace UnityEngine
         public string Description { get; set; }
         
         public Answer[] Answers { get; set; }
+        
+        public string AdditionalInfo { get; set; }
     }
 }

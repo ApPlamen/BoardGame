@@ -23,7 +23,7 @@ namespace UnityEngine
             
             foreach (var answer in question.Answers)
             {
-                _multichoiceManager.AddButton(answer.Description, () => { HandleAnswer(answer.IsRight, dice); });
+                _multichoiceManager.AddButton(answer.Description, () => { HandleAnswer(answer.IsRight, question.AdditionalInfo, dice); });
             }
             
             _multichoiceManager.Create();
@@ -44,15 +44,15 @@ namespace UnityEngine
             _multichoiceManager.Create();
         }
 
-        private static void HandleAnswer(bool isRight, Dice dice)
+        private static void HandleAnswer(bool isRight, string additionalInfo, Dice dice)
         {
             if (isRight)
             {
-                CreateInfoPrompt("Браво!", "Браво! Ти даде верен отговор. Да видим какво ще покаже зарчето!", "Ура", true, dice);
+                CreateInfoPrompt("Браво!", "Браво! Ти даде верен отговор. Да видим какво ще покаже зарчето! \nИнтересен факт:\n " + additionalInfo, "Ура", true, dice);
             }
             else
             {
-                CreateInfoPrompt("Съжалявам!", "Съжалявам, но ти даде грешен отговор. Пропускаш ход.", "Добре", false, dice);
+                CreateInfoPrompt("Съжалявам!", "Съжалявам, но ти даде грешен отговор. Пропускаш ход! \nИнтересен факт:\n " + additionalInfo, "Добре", false, dice);
             }
         }
         
