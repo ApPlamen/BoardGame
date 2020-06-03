@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8885644823149443546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8885644823149443541}
+  - component: {fileID: 8885644823149443540}
+  m_Layer: 0
+  m_Name: 1920 x 1080 Elegant Fullscreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8885644823149443541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885644823149443546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 350.5, y: 342.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8885644823149443540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885644823149443546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b531af16f8e9546b3a08cfc7ba5f316c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerPadding: 5
+  titlePadding: 5
+  messagePadding: 5
+  buttonPadding: 5
+  containerImage: {fileID: 21300000, guid: af4c872b5f936484a9ec6dece2933690, type: 3}
+  containerBleed: 50
+  containerTint: {r: 0.203, g: 0.203, b: 0.203, a: 1}
+  buttonImage: {fileID: 0}
+  buttonPressedImage: {fileID: 0}
+  returnButtonImage: {fileID: 0}
+  returnButtonPressedImage: {fileID: 0}
+  buttonPrefixImage: 0
+  buttonBleed: 0
+  buttonSeparation: 0
+  returnButtonTint: {r: 0.4963955, g: 0.869714, b: 0.9150943, a: 1}
+  returnButtonPressedTint: {r: 1, g: 1, b: 1, a: 0}
+  backgroundImage: {fileID: 0}
+  backgroundTint: {r: 0.19380394, g: 0.26643923, b: 0.27450982, a: 0.5882353}
+  titleFont: {fileID: 12800000, guid: 67b47c1b03f304d5fb58c17cf8688aef, type: 3}
+  bodyFont: {fileID: 12800000, guid: 68dad6d9740124f29aa52490a8f29602, type: 3}
+  buttonFont: {fileID: 12800000, guid: 68dad6d9740124f29aa52490a8f29602, type: 3}
+  textAlignment: 1
+  titleFontSize: 50
+  bodyFontSize: 30
+  buttonFontSize: 40
+  titleColor: {r: 1, g: 1, b: 1, a: 0.69803923}
+  bodyTextColor: {r: 1, g: 1, b: 1, a: 1}
+  returnTextColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
+  returnTextColorPressed: {r: 0.4963955, g: 0.869714, b: 0.9150943, a: 1}
+  makeThisParent: 0
+  container: {fileID: 0}
+  fadeAnimation: 2
+  fadeProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fadeDuration: 0.25
+  referenceSize: {x: 1920, y: 1080}
+  title: Popup Title
+  message: 'Optionally multiline
+
+    popup message'
+  popupPF: {fileID: 8701892416279498627, guid: 7d9f0f2641e194b639f9b2214409da84, type: 3}
+  placement: 0
+  flexibleWidth: 25
+  flexibleHeight: 50
+  staticWidth: 400
+  staticHeight: 400
+  staticX: 0
+  staticY: 0
+  staticAnchorX: 0.5
+  staticAnchorY: 0.5
+  staticAnchor: 4
+  worldWidth: 0
+  worldHeight: 0
+  worldPosition: {x: 0, y: 0, z: 0}
+  worldRotation: {x: 0, y: 0, z: 0}
+  worldScale: 0.01
+  worldFollowAxes:
+    x: 0
+    y: 0
+    z: 0
+  fullscreenTop: 50
+  fullscreenRight: 200
+  fullscreenBottom: 50
+  fullscreenLeft: 200
+  titleSeparator: 80
+  buttonSeparator: 20
+  showBehaviour: 1
+  showButtons: 0
+  showTypography: 0
+  showDesign: 0
+  showRatios: 0
+  initialize: 0
+  generalButtonTint: {r: 1, g: 1, b: 1, a: 0}
+  generalButtonPressedTint: {r: 1, g: 1, b: 1, a: 0}
+  returnFont: {fileID: 0}
+  buttonTextColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonTextColorPressed: {r: 0.4963955, g: 0.869714, b: 0.9150943, a: 1}
+  promptInputFieldImage: {fileID: 0}
+  promptInputFieldTint: {r: 0, g: 0, b: 0, a: 0}
+  promptInputfieldColor: {r: 0, g: 0, b: 0, a: 0}
+  promptPlaceholderColor: {r: 0, g: 0, b: 0, a: 0}
+  returnPosition: 0
+  buttonDirection: 0
+  promptType: 0
+  buttonList: []
+  showReturn: 1
+  returnButton:
+    text: Return
+    image: {fileID: 0}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: GRP_Event, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    foldoutState: 0

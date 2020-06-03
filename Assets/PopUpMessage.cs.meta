@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ed15669763550dc4eb79543da3221c27
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - popUpBox: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - popUpText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
